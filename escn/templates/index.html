@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div>
+        <a href="{% url 'register' %}"><img src="{%static 'images/bank.jpeg '%}" alt="" ></a>
+        <a href="{% url 'pin' %}"><img src="{%static 'images/pin.jpeg' %}" alt="" ></a>
+        <a href="{% url 'check_balance' %}"><img src="{% static 'images/wallet.jpeg' %}" alt=""></a>
+        <a href="{% url 'deposit'%}"><img src="{% static 'images/deposit.jpeg' %}" alt=""></a>
+        <a href="{% url 'withdraw'%}"><img src="{% static 'images/withdraw.jpeg' %}" alt=""></a>
+        <a href="{% url 'transfer'%}"><img src="{% static 'images/acc to acc.jpeg' %}" alt=""></a>
+    </div>
+</body>
+</html>
